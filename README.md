@@ -1,4 +1,4 @@
-# GC - VF: Generative and Contrastive self - supervised learning framework for virulence factor identification
+# GC - VF: Generative and Contrastive self - supervised learning framework for Virulence Factor identification
 
 ## Introduction
 
