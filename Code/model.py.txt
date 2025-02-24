@@ -135,7 +135,7 @@ class Projector(nn.Module):
 
 class Model(nn.Module):
     def __init__(self, protein_size, acid_size, gnn_in_size, hidden_size, gnn_out_size,
-                 pool_size=3, cnn_hidden=1, noise_level=0.1, num_negatives=10, temperature=0.07):
+                 pool_size=3, cnn_hidden=1, noise_level, num_negatives, temperature):
         # Initialize the Model
         super(Model, self).__init__()
 
