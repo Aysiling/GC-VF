@@ -40,17 +40,6 @@ class Encoder(nn.Module):
         self.sageconv1 = SAGEConv(input_dim, hidden_dim, 'pool')
         self.sageconv2 = SAGEConv(hidden_dim, output_dim, 'pool')
 
-        # self.sageconv1 = SAGEConv(input_dim, hidden_dim, 'mean')
-        # self.sageconv2 = SAGEConv(hidden_dim, output_dim, 'mean')
-        # self.sageconv1 = SAGEConv(input_dim, hidden_dim, 'lstm')
-        # self.sageconv2 = SAGEConv(hidden_dim, output_dim, 'lstm')
-        # self.sageconv1 = SAGEConv(input_dim, hidden_dim, 'gcn')
-        # self.sageconv2 = SAGEConv(hidden_dim, output_dim, 'gcn')
-
-        # self.sageconv1 = GraphConv(input_dim, hidden_dim)
-        # self.sageconv2 = GraphConv(hidden_dim, output_dim)
-        # self.sageconv1 = GATConv(input_dim, hidden_dim)
-        # self.sageconv2 = GATConv(hidden_dim, output_dim)
 
     def forward(self, blocks, x):
         # Forward pass of the Encoder module
